@@ -6,8 +6,8 @@ Handlebars.registerHelper('eq', function(val, val2, options) {
 	 return options.inverse(this);
   }
 });
+=========================== Usage in template ===================================
 
-//Usage in template
-//{{#eq type "all" }}
-//<button class="orderer" data-target="sortableAnswers_{{type}}">save order</button>
-//{{/eq}}
+{{#eq type "all" }}
+<button class="orderer" data-target="sortableAnswers_{{type}}">save order</button>
+{{/eq}}
